@@ -65,20 +65,7 @@ body {
     background-color: cornflowerblue;
 }
 
-@media (max-width: 768px) {
-    .row{
-        display: column;
-    }
-    .box{
-        height: auto;
-        
-    }
-    .profile-photo{
-        max-width: 100%;
-  height: auto;
-  display: block;
-    }
-}
+
 
 nav{
     background-color :rgb(244, 232, 255);
@@ -112,13 +99,16 @@ nav{
 .container {
     padding: 20px;
     justify-self: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
     
   }
   
 .form-box {
     background: white;
     padding: 30px 40px;
-    border-radius: 16px;
+    border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     max-width: 500px;
     width: 100%;
@@ -166,4 +156,31 @@ button {
 button:hover {
     background-color: darkviolet;
 }
-  
+a{
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+    .row{
+        display: column;
+    }
+    .box{
+        height: auto;
+        
+    }
+    .profile-photo{
+        max-width: 100%;
+  height: auto;
+  display: block;
+    }
+    .form-box {
+        padding: 20px;
+      }
+    
+      h2 {
+        font-size: 20px;
+      }
+    
+      button {
+        font-size: 14px;
+      }
+}
